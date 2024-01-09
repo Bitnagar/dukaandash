@@ -13,6 +13,7 @@ export default {
             30: "#4D4D4D",
             90: "#E6E6E6",
             95: "#F2F2F2",
+            99: "#FAFAFA",
           },
           blue: "#146EB4",
           navbar: {

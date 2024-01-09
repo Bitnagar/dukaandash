@@ -53,7 +53,7 @@ export default function Sidebar() {
                   src={obj.url}
                   className="w-[20px] h-[20px]"
                 />
-                <p>{obj.title}</p>
+                <p className="text-[14px] font-medium">{obj.title}</p>
               </a>
             );
           })}

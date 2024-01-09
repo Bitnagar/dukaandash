@@ -2,7 +2,7 @@ import DataGrid from "./DataGrid";
 
 export default function Main() {
   return (
-    <section className="min-w-min h-full p-8 bg-primary-black-95 overflow-y-scroll">
+    <section className="min-w-min h-full p-8 bg-primary-black-99 overflow-y-scroll">
       <div className="flex items-center justify-between">
         <h2 className="text-[20px] text-primary-black-12 font-medium">
           Overview

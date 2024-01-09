@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Dukaan Dashboard - FE hiring assignment - Built by Shivam Bhatnagar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi Team!
 
-Currently, two official plugins are available:
+I am Shivam Bhatnagar, a fresh CS graduate and a skilled frontend developer from Delhi. I have submitted this assignment for dukaan's Frontend Engineer role.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## Expanding the ESLint configuration
+Technologies used to build:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- Typescript
+- TailwindCSS
+- Vite
 
-- Configure the top-level `parserOptions` property like this:
+Project is responsive and adheres to a11y principles. It will not break on smaller viewports. Users will be able to view the data.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+The project is 99.99% close to pixel perfect.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Project Structure
+
+The project was bootstrapped with Vite.
+
+The `src` folder contains the `tsx` files and components that make up the dashboard. In the `root` of the project lies the `index.html` file.
+
+The `public` folder contains assets such as icons.
+
+The `src/components` folder contains all the components listed in their respective folders. For example `src/components/header` will contain the `<Header/>` component.
+
+The `tailwind.config.js` contains the different styles and colors as per the figma design.
+
+## About me
+
+I'm a Frontend Developer and an open source contributor based out of Noida, India. I love creating fully functional web apps.
+
+I am skilled in Next.js, React, JavaScript, MongoDB, tailwind + several other developer tools.
+
+Visit my portfolio: [Bitnagar](https://bitnagar.dev)
+
+Linkedin: [Shivam Bhatnagar](https://www.linkedin.com/in/shivambhatnagar01/)
