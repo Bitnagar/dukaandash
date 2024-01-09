@@ -11,7 +11,10 @@ export default function Sidebar() {
             />
             <div className="w-full">
               <p className="text-[15px] text-white">Nishyan</p>
-              <a className="text-[13px] underline text-primary-white-80">
+              <a
+                className="text-[13px] underline text-primary-white-80"
+                href="#"
+              >
                 Visit store
               </a>
             </div>
@@ -19,15 +22,17 @@ export default function Sidebar() {
           <img
             src={"/assets/sidebar/arrowdown.svg"}
             className="w-[15px] h-[9px]"
+            tabIndex={0}
           />
         </div>
         <div className="w-full">
           {data.map((obj, key) => {
             return (
-              <div
+              <a
+                href={"/" + obj.title.toLowerCase()}
                 key={key}
                 className={
-                  `w-full flex px-4 py-2 gap-3 items-center rounded text-primary-white-80 hover:bg-primary-navbar-wallet-icon_bg` +
+                  `w-full flex px-4 py-2 gap-3 items-center rounded text-primary-white-80 hover:bg-primary-navbar-wallet-icon_bg focus:bg-primary-navbar-wallet-icon_bg` +
                   ` ${
                     obj.title === "Payments"
                       ? "bg-primary-navbar-wallet-icon_bg text-white"
@@ -40,7 +45,7 @@ export default function Sidebar() {
                   className="w-[20px] h-[20px]"
                 />
                 <p>{obj.title}</p>
-              </div>
+              </a>
             );
           })}
         </div>
