@@ -9,7 +9,7 @@ export default function Sidebar() {
             <img
               src={"/assets/sidebar/nishyan.png"}
               alt="Logo of Nishyan Store"
-              className="w-[40px] h-[46px]"
+              className="w-[40px] h-[40px] mt-[2px]"
             />
             <div className="w-full">
               <p
@@ -52,6 +52,7 @@ export default function Sidebar() {
                 <img
                   src={obj.url}
                   className="w-[20px] h-[20px]"
+                  alt={obj.title + " icon"}
                 />
                 <p className="text-[14px] font-medium">{obj.title}</p>
               </a>

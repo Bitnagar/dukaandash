@@ -3,10 +3,14 @@ export default function Pagination() {
   return (
     <div className="w-full my-7 flex justify-center">
       <div className="flex  items-center gap-9">
-        <button className="flex items-center justify-center gap-3 px-3 py-2 border border-black-85 rounded">
+        <button
+          title="previous"
+          className="flex items-center justify-center gap-3 px-3 py-2 border border-black-85 rounded"
+        >
           <img
             src={"/assets/main/previous.svg"}
             className="w-[15px] h-[15px] cursor-pointer"
+            alt="previous icon"
           />
           <span>Previous</span>
         </button>
@@ -37,11 +41,15 @@ export default function Pagination() {
             );
           })}
         </div>
-        <button className="flex items-center justify-center gap-3 px-3 py-2 border border-black-85 rounded">
+        <button
+          title="next"
+          className="flex items-center justify-center gap-3 px-3 py-2 border border-black-85 rounded"
+        >
           <span>Next</span>
           <img
             src={"/assets/main/next.svg"}
             className="w-[15px] h-[15px] cursor-pointer"
+            alt="next icon"
           />
         </button>
       </div>

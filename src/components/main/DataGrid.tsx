@@ -8,6 +8,7 @@ export default function DataGrid() {
           <img
             src={"/assets/header/search.svg"}
             className="w-[15px] h-[15px] cursor-pointer"
+            alt="search icon"
           />
           <input
             type="text"
@@ -17,17 +18,25 @@ export default function DataGrid() {
           />
         </div>
         <div className="flex gap-3">
-          <button className="flex items-center justify-center gap-[6px] border border-black-85 px-2 py-1 rounded">
+          <button
+            title="sort"
+            className="flex items-center justify-center gap-[6px] border border-black-85 px-2 py-1 rounded"
+          >
             <span className=" text-base">Sort</span>
             <img
               src={"/assets/main/sort.svg"}
               className="w-[18px] h-[18px]"
+              alt="sort icon"
             />
           </button>
-          <button className="flex items-center justify-center gap-[6px] border border-black-85 px-2 py-1 rounded">
+          <button
+            title="download"
+            className="flex items-center justify-center gap-[6px] border border-black-85 px-2 py-1 rounded"
+          >
             <img
               src={"/assets/main/download.svg"}
               className="w-[18px] h-[18px]"
+              alt="download icon"
             />
           </button>
         </div>
@@ -38,6 +47,7 @@ export default function DataGrid() {
             <th className="text-left">Order ID</th>
             <th className="text-center">
               <select
+                aria-label="orderDate"
                 name="orderDate"
                 className="bg-transparent"
               >
@@ -52,6 +62,7 @@ export default function DataGrid() {
                 tabIndex={0}
                 src={"/assets/main/i-icon.svg"}
                 className="w-[15px] h-[15px] cursor-pointer"
+                alt="information icon"
               />
             </th>
           </tr>

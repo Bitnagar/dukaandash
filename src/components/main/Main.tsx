@@ -8,6 +8,7 @@ export default function Main() {
           Overview
         </h2>
         <select
+          aria-label="month"
           name="month"
           className="py-[6px] px-1 text-[16px] font-normal bg-white border border-black-85 rounded"
         >
