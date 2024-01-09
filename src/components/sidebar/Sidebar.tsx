@@ -1,6 +1,8 @@
+import data from "../../utils/utils";
+
 export default function Sidebar() {
   return (
-    <aside className="w-full h-full flex flex-col justify-between bg-primary-navbar-background row-span-2 p-[16px_8px_16px_8px]">
+    <aside className="min-w-[224px] min-h-full top-0 left-0 flex flex-col justify-between bg-primary-navbar-background row-span-2 py-4 px-2">
       <div className="w-full h-full flex flex-col gap-8">
         <div className="w-full flex items-center">
           <div className="w-full h-full flex gap-3">
@@ -32,10 +34,10 @@ export default function Sidebar() {
                 href={"/" + obj.title.toLowerCase()}
                 key={key}
                 className={
-                  `w-full flex px-4 py-2 gap-3 items-center rounded text-primary-white-80 hover:bg-primary-navbar-wallet-icon_bg focus:bg-primary-navbar-wallet-icon_bg` +
+                  `w-full flex px-4 py-2 gap-3 items-center rounded text-primary-white-80 hover:bg-primary-navbar-wallet-icon focus:bg-primary-navbar-wallet-icon_bg` +
                   ` ${
                     obj.title === "Payments"
-                      ? "bg-primary-navbar-wallet-icon_bg text-white"
+                      ? "bg-primary-navbar-wallet-icon text-white"
                       : ""
                   }`
                 }
@@ -57,9 +59,9 @@ export default function Sidebar() {
 
 function AvailableCredits() {
   return (
-    <div className="w-full h-14 p-[6px_12px_6px_12px] bg-[#353C53] rounded">
+    <div className="w-full h-14 p-[6px_12px_6px_12px] bg-primary-navbar-wallet rounded">
       <div className="w-full h-full flex items-center gap-3">
-        <div className="w-fit p-[6px] bg-primary-navbar-wallet-icon_bg h-fit rounded">
+        <div className="w-fit p-[6px] bg-primary-navbar-wallet-icon h-fit rounded">
           <img
             src={"/assets/sidebar/wallet.svg"}
             alt="nishyan"
@@ -74,54 +76,3 @@ function AvailableCredits() {
     </div>
   );
 }
-
-const data = [
-  {
-    title: "Home",
-    url: "/assets/sidebar/linkicons/Navbar-Icon.svg",
-  },
-  {
-    title: "Orders",
-    url: "/assets/sidebar/linkicons/Vector.svg",
-  },
-  {
-    title: "Products",
-    url: "/assets/sidebar/linkicons/Vector-1.svg",
-  },
-  {
-    title: "Delivery",
-    url: "/assets/sidebar/linkicons/Vector-2.svg",
-  },
-  {
-    title: "Marketing",
-    url: "/assets/sidebar/linkicons/Vector-3.svg",
-  },
-  {
-    title: "Analytics",
-    url: "/assets/sidebar/linkicons/Vector-4.svg",
-  },
-  {
-    title: "Payments",
-    url: "/assets/sidebar/linkicons/Vector-5.svg",
-  },
-  {
-    title: "Tools",
-    url: "/assets/sidebar/linkicons/Vector-6.svg",
-  },
-  {
-    title: "Discounts",
-    url: "/assets/sidebar/linkicons/Vector-7.svg",
-  },
-  {
-    title: "Audience",
-    url: "/assets/sidebar/linkicons/Vector-8.svg",
-  },
-  {
-    title: "Appearence",
-    url: "/assets/sidebar/linkicons/Vector-9.svg",
-  },
-  {
-    title: "Plugins",
-    url: "/assets/sidebar/linkicons/Vector.svg",
-  },
-];
