@@ -31,7 +31,7 @@ export default function Sidebar() {
           {data.map((obj, key) => {
             return (
               <a
-                href={"/" + obj.title.toLowerCase()}
+                href="#"
                 key={key}
                 className={
                   `w-full flex px-4 py-2 gap-3 items-center rounded text-primary-white-80 hover:bg-primary-navbar-wallet-icon focus:bg-primary-navbar-wallet-icon_bg` +

@@ -13,7 +13,7 @@ export default function DataGrid() {
             type="text"
             placeholder="Search by order ID..."
             className="w-full bg-transparent pl-1"
-            name="seachOrder"
+            name="searchOrder"
           />
         </div>
         <div className="flex gap-3">

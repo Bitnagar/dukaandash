@@ -21,6 +21,7 @@ export default function Header() {
           type="text"
           placeholder="Search features, tutorials, etc."
           className="w-full bg-transparent pl-1"
+          name="search"
         />
       </div>
       <div className="flex w-fit gap-4">
