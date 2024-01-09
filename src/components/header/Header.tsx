@@ -8,6 +8,7 @@ export default function Header() {
             tabIndex={0}
             src={"/assets/header/questionmark.svg"}
             className="min-w-[15px] h-[15px] cursor-pointer"
+            title="question mark"
           />
           how it works
         </span>
@@ -16,6 +17,7 @@ export default function Header() {
         <img
           src={"/assets/header/search.svg"}
           className="min-w-[15px] h-[15px] cursor-pointer"
+          title="search"
         />
         <input
           type="text"
@@ -32,6 +34,7 @@ export default function Header() {
           <img
             src={"/assets/header/group.svg"}
             className="min-w-[15px] h-[15px]"
+            title="group"
           />
         </span>
         <span
@@ -41,6 +44,7 @@ export default function Header() {
           <img
             src={"/assets/header/arrowblackdown.svg"}
             className="min-w-[15px] max-w-[15px] h-[15px]"
+            title="arrow down"
           />
         </span>
       </div>

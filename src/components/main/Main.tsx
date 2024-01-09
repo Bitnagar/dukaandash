@@ -4,9 +4,9 @@ export default function Main() {
   return (
     <section className="min-w-min h-full p-8 bg-primary-black-95 overflow-y-scroll">
       <div className="flex items-center justify-between">
-        <p className="text-[20px] text-primary-black-12 font-medium">
+        <h2 className="text-[20px] text-primary-black-12 font-medium">
           Overview
-        </p>
+        </h2>
         <select
           name="month"
           className="py-[6px] px-1 text-[16px] font-normal bg-white border border-black-85 rounded"
@@ -35,7 +35,7 @@ export default function Main() {
         </div>
       </div>
       <div className="mt-8">
-        <h1 className="text-[20px] font-medium">Transactions | This Month</h1>
+        <h2 className="text-[20px] font-medium">Transactions | This Month</h2>
       </div>
       <DataGrid />
     </section>

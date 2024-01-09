@@ -8,11 +8,16 @@ export default function Sidebar() {
           <div className="w-full h-full flex gap-3">
             <img
               src={"/assets/sidebar/nishyan.png"}
-              alt="nishyan"
+              alt="Logo of Nishyan Store"
               className="w-[40px] h-[46px]"
             />
             <div className="w-full">
-              <p className="text-[15px] text-white">Nishyan</p>
+              <p
+                className="text-[15px] text-white"
+                title="Nishyan"
+              >
+                Nishyan
+              </p>
               <a
                 className="text-[13px] underline text-primary-white-80"
                 href="#"
@@ -25,19 +30,21 @@ export default function Sidebar() {
             src={"/assets/sidebar/arrowdown.svg"}
             className="w-[15px] h-[9px]"
             tabIndex={0}
+            alt="arrow down icon"
           />
         </div>
         <div className="w-full">
           {data.map((obj, key) => {
             return (
               <a
+                title={obj.title}
                 href="#"
                 key={key}
                 className={
-                  `w-full flex px-4 py-2 gap-3 items-center rounded text-primary-white-80 hover:bg-primary-navbar-wallet-icon focus:bg-primary-navbar-wallet-icon_bg` +
+                  `w-full flex px-4 py-2 gap-3 items-center rounded text-primary-white-80 hover:bg-primary-navbar-wallet focus:bg-primary-navbar-wallet-icon` +
                   ` ${
                     obj.title === "Payments"
-                      ? "bg-primary-navbar-wallet-icon text-white"
+                      ? "bg-primary-navbar-wallet text-white"
                       : ""
                   }`
                 }
@@ -69,7 +76,12 @@ function AvailableCredits() {
           />
         </div>
         <div className="w-fit h-fit">
-          <p className="w-fit text-primary-white-80">Available credits</p>
+          <p
+            className="w-fit text-primary-white-80"
+            title="available credits"
+          >
+            Available credits
+          </p>
           <h1 className="text-white">222.10</h1>
         </div>
       </div>
