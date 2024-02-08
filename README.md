@@ -1,8 +1,4 @@
-# Dukaan Dashboard - FE hiring assignment - Built by Shivam Bhatnagar
-
-Hi Team!
-
-I am Shivam Bhatnagar, a fresh CS graduate and a skilled frontend developer from Delhi. I have submitted this assignment for dukaan's Frontend Engineer role.
+# Dukaan Dashboard - Built by Shivam Bhatnagar
 
 ## Project Overview
 
